@@ -11,7 +11,7 @@ module.exports = {
             href: '/img/geass-bg.ico'
         }],
     ],
-    base: '/calos/', // 这是部署到github相关的配置
+   // base: '/blog/', // 这是部署到github相关的配置
     markdown: {
         lineNumbers: true // 代码块显示行号
     },
