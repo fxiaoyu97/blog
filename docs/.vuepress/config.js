@@ -26,47 +26,28 @@ module.exports = {
             {
                 text: '编程学习',
                 link: '/Code/'
-            }, // http://localhost:8080/Wiki1001Pro/FAQ/
+            }, 
             {
-                text: '面试指南',
-                link: '/Audition/'
+                text: '项目实践',
+                link: '/Project/'
             },
             {
-                text: '百宝箱',
-                link: '/Tool/'
+                text: '软件合集',
+                link: '/Software/'
             },
             {
                 text: '随笔',
-                link: '/Store/'
+                link: '/Story/'
             },
             {
-                text: '推荐',
-                link: '/Thought/'
-            },
-            // 多项，下拉形式
-            {
-                text: 'Concat',
-                items: [
-                    // link：指向链接也可以是外网链接
-                    {
-                        text: 'Segmentfault',
-                        link: 'https://segmentfault.com/u/mulander'
-                    },
-                ]
-            },
-            {
-                text: 'GitHub',
+                text: '关于我',
                 items: [{
                         text: 'GitHub首页',
-                        link: 'https://github.com/Mulander-J'
+                        link: 'https://github.com/fxiaoyu97'
                     },
                     {
-                        text: 'Island',
-                        link: 'https://mulander-j.github.io/island/code/html/index.html'
-                    },
-                    {
-                        text: 'TimeWaster',
-                        link: 'https://mulander-j.github.io/timeWaster/demo/index.html#/'
+                        text: '博客',
+                        link: 'https://www.cnblogs.com/tudou1179006580/'
                     },
                 ]
             },
@@ -83,16 +64,13 @@ module.exports = {
                             // ['','']=>[路径,标题]
                             // 或者写成 '路径',标题自动识别为该地址的文件中的h1标题
                             // 不以 '/' 结尾的就是指向.md文件             
-                            ['/Code/Java/Digested','消化过'], // '/FAQ/DigestionHeap/Digested.md'文件
-                            ['/Code/Java/Digesting','消化中'],
-                            ['/Code/Java/DigestWill','待消化']
+                            ['/Code/Java/','Java基础'], // '/FAQ/DigestionHeap/Digested.md'文件
                         ]
                     },
                     {
-                        title: '输出层',
+                        title: 'Git',
                         children: [
-                            ['/Code/Console/A001','#A001_VuePress'],
-                            ['/Code/Console/A002','#A002_插件清单']
+                            ['/Code/Git/','Git目录']
                         ]
                     },
                     ['/Code/','百科首页'],
@@ -100,19 +78,18 @@ module.exports = {
                     ['/Code/Pool/Review','归去来']
                 ],
                  // 打开Thought主页链接时生成下面这个菜单
-                '/Thought/':[
-                    ['/Thought/','随笔首页'],
+                '/Project/':[
+                    ['/Project/','项目实践'],
                     {
-                        title: '游记',
+                        title: '微服务',
                         children: [
-                            ['/Thought/Travels/beiPing','北平游记'],
+                            ['/Project/Microservices/shop','商城'],
                         ]
                     },
                     {
-                        title: '年终回顾',
+                        title: 'Springboot项目',
                         children: [
-                           ['/Thought/YearReview/2018','2018年'],
-                           ['/Thought/YearReview/2019','2019年']
+                           ['/Project/Springboot/shop','商城'],
                         ]
                     },
                 ],
