@@ -31,7 +31,15 @@ module.exports = {
             // [以 '/' 结尾的默认指向该路径下README.md文件]
             {
                 text: '编程学习',
-                link: '/Code/'
+                items: [{
+                    text: 'Java',
+                    link: '/Code/'
+                },
+                {
+                    text: 'Python',
+                    link: '/Code/'
+                },
+            ]
             }, 
             {
                 text: '项目实践',
@@ -68,7 +76,7 @@ module.exports = {
                     //多级菜单形式
                     {
                         // 菜单名
-                        title: 'Java学习',
+                        title: 'Java基础',
                         collapsable: false,
                         //sidebarDepth: 2, // 显示的侧边栏深度
                         // 子菜单
@@ -76,15 +84,10 @@ module.exports = {
                             // ['','']=>[路径,标题]
                             // 或者写成 '路径',标题自动识别为该地址的文件中的h1标题
                             // 不以 '/' 结尾的就是指向.md文件             
-                            ['/Code/Java/','Java基础'], // '/FAQ/DigestionHeap/Digested.md'文件
+                            '/Code/Java/',
                         ]
                     },
-                    {
-                        title: 'Git',
-                        children: [
-                            ['/Code/Git/','Git目录']
-                        ]
-                    }
+                    ['/Code/Git/','Git学习']
                 ],
                  // 打开Thought主页链接时生成下面这个菜单
                 '/Project/':[
