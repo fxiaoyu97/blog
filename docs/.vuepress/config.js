@@ -11,13 +11,19 @@ module.exports = {
             href: '/img/geass-bg.ico'
         }],
     ],
+    locales: {
+        '/': {
+            lang: 'zh-CN', 
+        }
+    },
    // base: '/blog/', // 这是部署到github相关的配置
     markdown: {
         lineNumbers: true // 代码块显示行号
     },
     themeConfig: {
-        sidebarDepth: 4, // e'b将同时提取markdown中h2 和 h3 标题，显示在侧边栏上。
-        lastUpdated: 'Last Updated', // 文档更新时间：每个文件git最后提交的时间,
+        sidebarDepth: 1, // e'b将同时提取markdown中h2 和 h3 标题，显示在侧边栏上。
+        //displayAllHeaders: true, // 显示所有页面的标题链接
+        lastUpdated: '上次更新', // 文档更新时间：每个文件git最后提交的时间,
         // 顶部导航栏
         nav: [
             // 单项 text：显示文字，link：指向链接
@@ -34,6 +40,10 @@ module.exports = {
             {
                 text: '软件合集',
                 link: '/Software/'
+            },
+            {
+                text: '理财',
+                link: '/Money/'
             },
             {
                 text: '随笔',
@@ -59,6 +69,8 @@ module.exports = {
                     {
                         // 菜单名
                         title: 'Java学习',
+                        collapsable: false,
+                        //sidebarDepth: 2, // 显示的侧边栏深度
                         // 子菜单
                         children: [
                             // ['','']=>[路径,标题]
@@ -72,14 +84,11 @@ module.exports = {
                         children: [
                             ['/Code/Git/','Git目录']
                         ]
-                    },
-                    ['/Code/','百科首页'],
-                    ['/Code/Pool/SkillStack','技术栈'],
-                    ['/Code/Pool/Review','归去来']
+                    }
                 ],
                  // 打开Thought主页链接时生成下面这个菜单
                 '/Project/':[
-                    ['/Project/','项目实践'],
+                    '',
                     {
                         title: '微服务',
                         children: [
@@ -93,26 +102,33 @@ module.exports = {
                         ]
                     },
                 ],
-                  // 打开Store主页链接时生成下面这个菜单
-                '/Store/': [
-                    ['','仓库首页'],
+                '/Money/':[
+                    {
+                        title: '基金',
+                        collapsable: false,
+                        sidebarDepth: 1, // 显示的侧边栏深度
+                        children: [
+                            '/Money/',
+                            '/Money/fund/',
+                            '/Money/Test',
+                        ]
+                    },
+                    {
+                        title: '股票',
+                        collapsable: false,
+                        children: [
+                           ['/Money/stock/','股票'],
+                        ]
+                    },
+                    ['/Code/','百科首页'],
+                ],
+                '/Story/': [
+                    ['','随笔'],
                     {
                         title: '应用',
                         children: [
-                            ['/Store/Apps/DownDoors', '下载门户'],
-                            ['/Store/Apps/OwnTest', '博主测评']
-                        ]
-                    },
-                    {
-                        title: '电影',
-                        children: [
-                            ['/Store/Films/','收藏级电影']
-                        ]
-                    },
-                    {
-                        title: '动画',
-                        children: [
-                            ['/Store/Anime/','收藏级动画']
+                            // ['/Store/Apps/DownDoors', '下载门户'],
+                            // ['/Store/Apps/OwnTest', '博主测评']
                         ]
                     },
                 ]
