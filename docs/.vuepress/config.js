@@ -109,8 +109,8 @@ module.exports = {
                         sidebarDepth: 1, // 显示的侧边栏深度
                         children: [
                             '/Money/',
-                            '/Money/fund/',
-                            '/Money/Test',
+                            '/Money/fund/ETF基金',
+                            '/Money/fund/ETF联接基金',
                         ]
                     },
                     {
