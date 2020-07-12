@@ -16,7 +16,7 @@ module.exports = {
             lang: 'zh-CN', 
         }
     },
-   // base: '/blog/', // 这是部署到github相关的配置
+    // base: '/calos/', // 这是部署到github相关的配置
     markdown: {
         lineNumbers: true // 代码块显示行号
     },
@@ -33,29 +33,29 @@ module.exports = {
                 text: '编程学习',
                 items: [{
                     text: 'Java',
-                    link: '/Code/'
+                    link: '/code/'
                 },
                 {
                     text: 'Python',
-                    link: '/Code/'
+                    link: '/code/'
                 },
             ]
             }, 
             {
                 text: '项目实践',
-                link: '/Project/'
+                link: '/projects/'
             },
             {
                 text: '软件合集',
-                link: '/Software/'
+                link: '/software/'
             },
             {
                 text: '理财',
-                link: '/Money/'
+                link: '/money/'
             },
             {
                 text: '随笔',
-                link: '/Story/'
+                link: '/story/'
             },
             {
                 text: '关于我',
@@ -72,7 +72,7 @@ module.exports = {
         ],
         sidebar:{
                  // 打开Code主页链接时生成下面这个菜单
-                '/Code/':[
+                '/code/':[
                     //多级菜单形式
                     {
                         // 菜单名
@@ -83,49 +83,53 @@ module.exports = {
                         children: [
                             // ['','']=>[路径,标题]
                             // 或者写成 '路径',标题自动识别为该地址的文件中的h1标题
-                            // 不以 '/' 结尾的就是指向.md文件             
-                            '/Code/Java/',
+                            // 不以 '/' 结尾的就是指向.md文件            
+                            '/code/',
                         ]
                     },
-                    ['/Code/Git/','Git学习']
+                    {
+                        // 菜单名
+                        title: 'Spring学习',
+                        collapsable: false,
+                        //sidebarDepth: 2, // 显示的侧边栏深度
+                        // 子菜单
+                        children: [
+                            // ['','']=>[路径,标题]
+                            // 或者写成 '路径',标题自动识别为该地址的文件中的h1标题
+                            // 不以 '/' 结尾的就是指向.md文件             
+                            '/code/spring/Spring各版本与Java的关系',
+                        ]
+                    },
+                    ['/code/git/','Git学习']
                 ],
                  // 打开Thought主页链接时生成下面这个菜单
-                '/Project/':[
-                    '',
-                    {
-                        title: '微服务',
-                        children: [
-                            ['/Project/Microservices/shop','商城'],
-                        ]
-                    },
-                    {
-                        title: 'Springboot项目',
-                        children: [
-                           ['/Project/Springboot/shop','商城'],
-                        ]
-                    },
+                // '/projects/':[
+                //     '/projects'
+                // ],
+                '/software/':[
+                    'software'
                 ],
-                '/Money/':[
+                '/money/':[
                     {
                         title: '基金',
                         collapsable: false,
                         sidebarDepth: 1, // 显示的侧边栏深度
                         children: [
-                            '/Money/',
-                            '/Money/fund/ETF基金',
-                            '/Money/fund/ETF联接基金',
+                            '/money/',
+                            '/money/fund/ETF基金',
+                            '/money/fund/ETF联接基金',
                         ]
                     },
                     {
                         title: '股票',
                         collapsable: false,
                         children: [
-                           ['/Money/stock/','股票'],
+                           ['/money/stock/','股票'],
                         ]
                     },
-                    ['/Code/','百科首页'],
+                    ['/code/','百科首页'],
                 ],
-                '/Story/': [
+                '/story/': [
                     ['','随笔'],
                     {
                         title: '应用',
