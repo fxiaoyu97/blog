@@ -48,7 +48,7 @@ Spring Boot 2.X是基于Spring Framework5开发的，从Spring Framework 5开始
 
 | 语法特性      | Spring支持版本 | 代表实现 |
 | ------------- | -------------- | -------- |
-| 接口@Override | 4.0+           |          |
+| 接口 | 4.0+           | @Override |
 
 + Java7语法特性
 
