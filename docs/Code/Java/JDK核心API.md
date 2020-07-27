@@ -48,3 +48,7 @@ Java2版本引入反射，Java3引入动态代理。
 + Method Handles（JEP 277）
 + Spin-Wait Hints（JEP 285）
 + Stack-Warking API（JEP 259）
+
+***
+
+JSR是Java Specification Request的缩写，也就是Java的规范请求，这里有很多编列的序号。

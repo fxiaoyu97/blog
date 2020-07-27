@@ -42,6 +42,10 @@ module.exports = {
             ]
             }, 
             {
+                text: '常见问题',
+                link: '/FQA/'
+            },
+            {
                 text: '项目实践',
                 link: '/projects/'
             },
@@ -106,6 +110,24 @@ module.exports = {
                 // '/projects/':[
                 //     '/projects'
                 // ],
+                '/FQA/':[
+                    {
+                        title: 'JAVA',
+                        collapsable: false,
+                        sidebarDepth: 1, // 显示的侧边栏深度
+                        children: [
+                            '/FQA/',
+                            '/FQA/java/如何优雅的读取yml配置文件',
+                        ]
+                    },
+                    {
+                        title: 'Windows',
+                        collapsable: false,
+                        children: [
+                           '/FQA/windows/Windows中杀死占用某个端口的进程',
+                        ]
+                    },
+                ],
                 '/software/':[
                     'software'
                 ],
