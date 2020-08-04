@@ -37,7 +37,7 @@ module.exports = {
                 },
                 {
                     text: 'Python',
-                    link: '/code/'
+                    link: '/money/'
                 },
             ]
             }, 
@@ -104,7 +104,7 @@ module.exports = {
                             '/code/spring/Spring各版本与Java的关系',
                         ]
                     },
-                    ['/code/git/','Git学习']
+                    ['/git/','Git学习']
                 ],
                  // 打开Thought主页链接时生成下面这个菜单
                 // '/projects/':[
@@ -158,6 +158,18 @@ module.exports = {
                         children: [
                             // ['/Store/Apps/DownDoors', '下载门户'],
                             // ['/Store/Apps/OwnTest', '博主测评']
+                        ]
+                    },
+                ],
+                '/git/': [
+                    {
+                        title: 'Git学习',
+                        collapsable: false,
+                        sidebarDepth: 1, // 显示的侧边栏深度
+                        children: [
+                            '/git/',
+                            '/git/撤销已经执行操作的文件',
+                            '/git/忽略不需要提交的文件或目录',
                         ]
                     },
                 ]
