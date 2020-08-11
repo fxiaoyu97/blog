@@ -34,11 +34,7 @@ module.exports = {
                 items: [{
                     text: 'Java',
                     link: '/code/'
-                },
-                {
-                    text: 'Python',
-                    link: '/money/'
-                },
+                }
             ]
             }, 
             {
@@ -93,18 +89,19 @@ module.exports = {
                     },
                     {
                         // 菜单名
-                        title: 'Spring学习',
+                        title: 'git学习',
                         collapsable: false,
                         //sidebarDepth: 2, // 显示的侧边栏深度
                         // 子菜单
-                        children: [
-                            // ['','']=>[路径,标题]
-                            // 或者写成 '路径',标题自动识别为该地址的文件中的h1标题
-                            // 不以 '/' 结尾的就是指向.md文件             
-                            '/code/spring/Spring各版本与Java的关系',
+                        children: [         
+                            '/FQA/windows/Windows中杀死占用某个端口的进程',
                         ]
                     },
-                    ['/git/','Git学习']
+                    
+                    ['/git/','Git学习'],
+                    ['/code/java/','Java学习'],
+                    ['/spring/','Spring学习笔记'],
+                    ['/springboot/','SpringBoot']
                 ],
                  // 打开Thought主页链接时生成下面这个菜单
                 // '/projects/':[
@@ -170,6 +167,27 @@ module.exports = {
                             '/git/',
                             '/git/撤销已经执行操作的文件',
                             '/git/忽略不需要提交的文件或目录',
+                        ]
+                    },
+                ],
+                '/spring/': [
+                    {
+                        title: 'Spring学习',
+                        collapsable: false,
+                        children: [           
+                            '/spring/Spring各版本与Java的关系',
+                            '/spring/项目启动时执行的操作',
+                        ]
+                    },
+                ],
+                '/springboot/': [
+                    {
+                        title: 'SpringBoot学习',
+                        collapsable: false,
+                        sidebarDepth: 1, // 显示的侧边栏深度
+                        children: [
+                            '/springboot/',
+                            '/springboot/yml实现多环境配置'
                         ]
                     },
                 ]
