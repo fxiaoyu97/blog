@@ -89,17 +89,16 @@ module.exports = {
                     },
                     {
                         // 菜单名
-                        title: 'git学习',
+                        title: '常见问题',
                         collapsable: false,
                         //sidebarDepth: 2, // 显示的侧边栏深度
                         // 子菜单
                         children: [         
-                            '/FQA/windows/Windows中杀死占用某个端口的进程',
+                            '/FQA/java/map、string、json互转',
                         ]
                     },
                     
                     ['/git/','Git学习'],
-                    ['/code/java/','Java学习'],
                     ['/spring/','Spring学习笔记'],
                     ['/springboot/','SpringBoot']
                 ],
@@ -115,6 +114,8 @@ module.exports = {
                         children: [
                             '/FQA/',
                             '/FQA/java/如何优雅的读取yml配置文件',
+                            '/FQA/java/map、string、json互转',
+                            '/FQA/java/nginx屏蔽指定IP',
                         ]
                     },
                     {
@@ -122,6 +123,7 @@ module.exports = {
                         collapsable: false,
                         children: [
                            '/FQA/windows/Windows中杀死占用某个端口的进程',
+                           '/FQA/windows/Window下nginx的启动和关闭.md',
                         ]
                     },
                 ],
@@ -187,7 +189,8 @@ module.exports = {
                         sidebarDepth: 1, // 显示的侧边栏深度
                         children: [
                             '/springboot/',
-                            '/springboot/yml实现多环境配置'
+                            '/springboot/yml实现多环境配置',
+                            '/springboot/springboot日期参数前后台转换问题',
                         ]
                     },
                 ]
