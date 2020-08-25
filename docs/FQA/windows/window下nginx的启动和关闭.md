@@ -1,4 +1,4 @@
-# window下nginx的启动和关闭
+# Window下nginx的启动和关闭
 
 ## 启动nginx
 

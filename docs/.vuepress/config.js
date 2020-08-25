@@ -122,8 +122,9 @@ module.exports = {
                         title: 'Windows',
                         collapsable: false,
                         children: [
+                            '/FQA/windows/idea快捷键',
                            '/FQA/windows/Windows中杀死占用某个端口的进程',
-                           '/FQA/windows/Window下nginx的启动和关闭.md',
+                           '/FQA/windows/Window下nginx的启动和关闭',
                         ]
                     },
                 ],

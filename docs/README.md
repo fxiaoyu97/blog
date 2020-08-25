@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /img/22.png
+heroImage: /img/23.png
 heroText: 三更编程-卡洛小豆
 tagline: 化繁为简，大道归一
 actionText: 互联网工程师的日常 →
