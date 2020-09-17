@@ -38,24 +38,12 @@ module.exports = {
             ]
             }, 
             {
-                text: '常见问题',
-                link: '/FQA/'
-            },
-            {
                 text: '项目实践',
                 link: '/projects/'
             },
             {
-                text: '软件合集',
-                link: '/software/'
-            },
-            {
-                text: '理财',
-                link: '/money/'
-            },
-            {
-                text: '随笔',
-                link: '/story/'
+                text: '常见问题',
+                link: '/FQA/'
             },
             {
                 text: '关于我',
@@ -103,9 +91,18 @@ module.exports = {
                     ['/springboot/','SpringBoot']
                 ],
                  // 打开Thought主页链接时生成下面这个菜单
-                // '/projects/':[
-                //     '/projects'
-                // ],
+                '/projects/':[
+                    '/projects/',
+                    {
+                        title: '乐优商城',
+                        collapsable: false,
+                        children: [
+                            '/leyou/开发工具准备',
+                            '/leyou/问题合集',
+                            '/leyou/day01/1.项目搭建',
+                        ]
+                    }
+                ],
                 '/FQA/':[
                     {
                         title: 'JAVA',
@@ -122,44 +119,42 @@ module.exports = {
                         title: 'Windows',
                         collapsable: false,
                         children: [
-                            '/FQA/windows/idea快捷键',
+                           '/FQA/windows/idea快捷键',
                            '/FQA/windows/Windows中杀死占用某个端口的进程',
                            '/FQA/windows/Window下nginx的启动和关闭',
                         ]
                     },
                 ],
-                '/software/':[
-                    'software'
-                ],
-                '/money/':[
+                '/leyou/': [
                     {
-                        title: '基金',
+                        title: '乐优商城',
                         collapsable: false,
                         sidebarDepth: 1, // 显示的侧边栏深度
                         children: [
-                            '/money/',
-                            '/money/fund/ETF基金',
-                            '/money/fund/ETF联接基金',
+                            '/leyou/开发工具准备',
+                            '/leyou/问题合集',
                         ]
                     },
                     {
-                        title: '股票',
+                        title: '基础准备',
                         collapsable: false,
+                        sidebarDepth: 1, // 显示的侧边栏深度
                         children: [
-                           ['/money/stock/','股票'],
+                            '/leyou/day00/1.springboot的属性注入',
+                            '/leyou/day00/2.微服务',
+                            '/leyou/day00/3.熔断和网关',
+                            '/leyou/day00/4.zuul网关的四种配置方式',
                         ]
                     },
-                    ['/code/','百科首页'],
-                ],
-                '/story/': [
-                    ['','随笔'],
                     {
-                        title: '应用',
+                        title: '开发笔记',
+                        collapsable: false,
+                        sidebarDepth: 1, // 显示的侧边栏深度
                         children: [
-                            // ['/Store/Apps/DownDoors', '下载门户'],
-                            // ['/Store/Apps/OwnTest', '博主测评']
+                            '/leyou/day01/1.项目搭建',
                         ]
                     },
+                   
                 ],
                 '/git/': [
                     {
